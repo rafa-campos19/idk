@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotina Semanal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f8f8;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .day-section {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .day-section h2 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 12px;
+    }
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+    .time {
+      font-weight: bold;
+      margin-right: 6px;
+    }
+    label {
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-left: 28px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Rotina Semanal</h1>
+
+<!-- Segunda a Quinta -->
+<div class="day-section">
+  <h2>Segunda a Quinta</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="mon-thu-07h00">
+      <label for="mon-thu-07h00">
+        <span class="time">07h00 - 07h30:</span>
+        Acordar, higiene pessoal e café da manhã rápido.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-07h30">
+      <label for="mon-thu-07h30">
+        <span class="time">07h30 - 08h00:</span>
+        Organizar espaço de trabalho / revisar tarefas do dia.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-08h00">
+      <label for="mon-thu-08h00">
+        <span class="time">08h00 - 12h00:</span>
+        Home office (estágio).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-12h00">
+      <label for="mon-thu-12h00">
+        <span class="time">12h00 - 13h00:</span>
+        Almoço e pausa. <em>(Opcional: exercício rápido nos últimos 20min)</em>
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-13h00">
+      <label for="mon-thu-13h00">
+        <span class="time">13h00 - 15h00:</span>
+        Home office (estágio).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-15h00">
+      <label for="mon-thu-15h00">
+        <span class="time">15h00 - 15h30:</span>
+        Pausa pós-trabalho (lanche, água, alongamento).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-15h30">
+      <label for="mon-thu-15h30">
+        <span class="time">15h30 - 17h00:</span>
+        Estudos do TCC (leitura, escrita, revisão).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-17h00">
+      <label for="mon-thu-17h00">
+        <span class="time">17h00 - 17h30:</span>
+        Exercícios em casa <em>(se não tiver feito ao meio-dia)</em>.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-17h30">
+      <label for="mon-thu-17h30">
+        <span class="time">17h30 - 19h00:</span>
+        Continuação do TCC ou tarefas acadêmicas/pessoais.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-19h00">
+      <label for="mon-thu-19h00">
+        <span class="time">19h00 - 20h00:</span>
+        Jantar e pausa.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-20h00">
+      <label for="mon-thu-20h00">
+        <span class="time">20h00 - 21h30:</span>
+        Continuação do TCC ou lazer, conforme pendências.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="mon-thu-21h30">
+      <label for="mon-thu-21h30">
+        <span class="time">21h30 - 22h30:</span>
+        Desacelerar (banho, leitura) e dormir por volta das 22h30.
+      </label>
+    </li>
+  </ul>
+</div>
+
+<!-- Sexta -->
+<div class="day-section">
+  <h2>Sexta</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="fri-07h00">
+      <label for="fri-07h00">
+        <span class="time">07h00 - 07h30:</span>
+        Acordar, higiene pessoal, café da manhã.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-08h00">
+      <label for="fri-08h00">
+        <span class="time">08h00 - 12h00:</span>
+        Home office (estágio).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-12h00">
+      <label for="fri-12h00">
+        <span class="time">12h00 - 13h00:</span>
+        Almoço e pausa <em>(possibilidade de exercício rápido)</em>.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-13h00">
+      <label for="fri-13h00">
+        <span class="time">13h00 - 15h00:</span>
+        Home office (estágio).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-15h00">
+      <label for="fri-15h00">
+        <span class="time">15h00 - 16h30:</span>
+        Estudos do TCC.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-16h30">
+      <label for="fri-16h30">
+        <span class="time">16h30 - 17h00:</span>
+        Intervalo / lanche / preparação para reunião ou exercício rápido.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-18h00">
+      <label for="fri-18h00">
+        <span class="time">18h00 - ~18h30:</span>
+        Reunião com orientadores.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-18h30">
+      <label for="fri-18h30">
+        <span class="time">18h30 - 19h00:</span>
+        Anotações da reunião, planejar próximas etapas.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-19h00">
+      <label for="fri-19h00">
+        <span class="time">19h00 - 20h00:</span>
+        Jantar.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-20h00">
+      <label for="fri-20h00">
+        <span class="time">20h00 - 21h30:</span>
+        Continuação do TCC ou descanso, conforme necessidade.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="fri-21h30">
+      <label for="fri-21h30">
+        <span class="time">21h30 - 22h30:</span>
+        Desacelerar e dormir.
+      </label>
+    </li>
+  </ul>
+</div>
+
+<!-- Sábado -->
+<div class="day-section">
+  <h2>Sábado</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="sat-sleepin">
+      <label for="sat-sleepin">
+        Dormir um pouco mais (até ~08h30).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-09h00">
+      <label for="sat-09h00">
+        <span class="time">09h00 - 10h00:</span>
+        Café da manhã e planejamento do dia.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-10h00">
+      <label for="sat-10h00">
+        <span class="time">10h00 - 12h00:</span>
+        Bloco de TCC (escrita, revisão, pesquisa).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-12h00">
+      <label for="sat-12h00">
+        <span class="time">12h00 - 13h00:</span>
+        Almoço.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-13h00">
+      <label for="sat-13h00">
+        <span class="time">13h00 - 15h00:</span>
+        Continuação do TCC ou tempo livre (conforme urgência).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-15h00">
+      <label for="sat-15h00">
+        <span class="time">15h00 - 16h00:</span>
+        Pausa / lazer / leitura.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-16h00">
+      <label for="sat-16h00">
+        <span class="time">16h00 - 17h00:</span>
+        Exercícios em casa (treino principal).
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-17h00">
+      <label for="sat-17h00">
+        <span class="time">17h00 - 19h00:</span>
+        Tempo livre / tarefas pessoais ou continuar TCC.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-19h00">
+      <label for="sat-19h00">
+        <span class="time">19h00 - 20h00:</span>
+        Jantar.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-20h00">
+      <label for="sat-20h00">
+        <span class="time">20h00 - 22h30:</span>
+        Lazer ou TCC, se necessário.
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" id="sat-22h30">
+      <label for="sat-22h30">
+        Dormir ou relaxar (por volta das 22h30).
+      </label>
+    </li>
+  </ul>
+</div>
+
+<!-- Domingo -->
+<div class="day-section">
+  <h2>Domingo</h2>
+  <ul>
+    <li>
+      <input type="checkbox" id="sun-rest">
+      <label for="sun-rest">
+        Dia de descanso, lazer, família ou hobbies.
+      </label>
+      <div class="note">
+        Se necessário, use parte da manhã ou início da tarde para o TCC (atividade leve).
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="sun-light-exercise">
+      <label for="sun-light-exercise">
+        Exercícios leves (caminhada, ioga, alongamentos), se desejar manter o ritmo.
+      </label>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
